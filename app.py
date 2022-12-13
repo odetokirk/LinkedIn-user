@@ -119,7 +119,7 @@ st.write(pd.DataFrame({
     "Income": ["Less than $10,000", "$10,000 to under $20,000", "$20,000 to under $30,000", "$30,000 to under $40,000", "$40,000 to under $50,000", "$50,000 to under $75,000",
     "$75,000 to under $100,000", "$100,000 to under $150,000", "$150,000 or more"]}))
 
-
+#commenting out the slider
 #i = st.slider('Income', 1, 9, 5)
 
 i = st.selectbox(
@@ -135,8 +135,12 @@ st.write(pd.DataFrame({
     "Two-year associate degree from college or university", "Four-year college or university degree", "Some postgraduate or professional schooling, no degree",
     "Postgraduate or professional degree"]}))
 
+e = st.selectbox(
+    'Please reference the above table and select your education level from the dropdownm',
+   (1,2,3,4,5,6,7,8))
 
-e = st.slider('Please reference the aboce table and select your education Level using the slider', 1, 8, 3)
+#commenting out the slider
+#e = st.slider('Please reference the aboce table and select your education Level using the slider', 1, 8, 3)
 
 st.markdown("4. Are you a parent? Yes = 1, No = 0")
 p = st.slider('Parent', 1, 0)
