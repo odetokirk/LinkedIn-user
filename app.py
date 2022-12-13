@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import altair as alt
+import sklearn as sk
 import os
 
 from sklearn.linear_model import LogisticRegression
