@@ -123,7 +123,7 @@ st.write(pd.DataFrame({
 #i = st.slider('Income', 1, 9, 5)
 
 i = st.selectbox(
-    'Please reference the above table and select your income levle from the dropdownm',
+    'Please reference the above table and select your income levle from the dropdown',
    (1,2,3,4,5,6,7,8,9), key= int)
 
 
@@ -136,7 +136,7 @@ st.write(pd.DataFrame({
     "Postgraduate or professional degree"]}))
 
 e = st.selectbox(
-    'Please reference the above table and select your education level from the dropdownm',
+    'Please reference the above table and select your education level from the dropdown',
    (1,2,3,4,5,6,7,8))
 
 #commenting out the slider
