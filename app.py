@@ -155,6 +155,11 @@ persona = [i, e, p, m, g, a]
 probability = lr.predict_proba([persona])
 prob_r = probability[0][1]
 
+st.markdown("This logistic regression model predicts that a person with the above attributes:")
+if probs_r >= 0.5:
+    st.write("is a LinkedIn user.")
+    else:
+        st.write("in not a LinkedIn user."
 st.markdown("Given the above inputs, this person has a probability of being a LinkedIn user of:")
 st.write(prob_r)
 
